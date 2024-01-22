@@ -1,0 +1,1829 @@
+body {
+    /* #2393EA */
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    height: 120vh;
+
+    --sb-track-color: #ffffff;
+    --sb-thumb-color: #2393ea;
+    --sb-size: 1px;
+
+    scrollbar-color: var(--sb-thumb-color)
+                     var(--sb-track-color);
+}
+body::-webkit-scrollbar {
+    width: var(--sb-size);
+  }
+
+body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 4px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 4px;
+}
+::selection {
+    background-color: rgb(0, 71, 133);
+    color: white;
+}
+.application {
+    width: 80%;
+    margin: auto;
+}
+.app {
+    /* background-color: aqua; */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.parentImages {
+    /* background-color: blue; */
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    /* place-items: center; */
+    /* border-right: 2px solid #2393EA; */
+}
+.parentImages img{
+    width: 350px;
+    /* border-radius: 10px; */
+    border-right: 2px solid #2393EA;
+    margin-right: 5px;
+}
+.parentText {
+    color: #2393EA;
+    width: 50%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+.parentLinks {
+    width: 70%;
+    gap: 0;
+}
+.parentLinks h1 {
+    font-size: 35px;
+    text-transform: capitalize;
+}
+.parentLinks h4 {
+    text-transform: capitalize;
+    margin-top: -20px;
+}
+.a-link-socialmedia {
+    color: #2393EA;
+    text-decoration: none;
+    background-color: white;
+    width: 14.2rem;
+    height: 2.5rem;
+    border-radius: 10px;
+    display: flex;
+    gap: 5px    ;
+    justify-content: start;
+    padding-left: 1.2rem;
+    align-items: center;
+    cursor: pointer;
+    border: 0.05rem solid #2393EA;
+    margin-top: -15px;
+}
+.a-link-socialmedia:hover {
+    box-shadow: 0 0 1px 1px #00589c inset;
+}
+.a-link-socialmedia-cree {
+    color: white;
+    background-color: #2393EA;
+    text-decoration: none;
+    width: 14.2rem;
+    gap:5px;
+    height: 2.5rem;
+    border-radius: 10px;
+    display: flex;
+    padding-left: 1.2rem;
+    justify-content: start;
+    align-items: center;
+    cursor: pointer;
+    border: 0.05rem solid white;
+}
+.a-link-socialmedia-cree:hover {
+    box-shadow: 0 0 1px 1px #00589c inset;
+    border: 1px solid #2393EA;
+}
+.parentLinks table {
+    width: 70%;
+}
+
+
+.divhr {
+    width: 100%;
+    background-color: #2393EA;
+    height: 2px ;
+}
+.Ortd {
+    width: 15%;
+    text-align: center;
+}
+.parentFormLogin {
+    color: #2393EA;
+    width: 50%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.parentImgLogin {
+    display: grid;
+    place-items: center;
+}
+
+.parentImgLogin img{
+    width: 160px;
+    height: 2.7rem;
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+}
+
+.formLogin {
+    padding: 2rem;
+    background-color: white;
+    border: 0.1rem solid #2393EA;
+    border-radius: 10px;
+}
+
+.parentInputs input{
+    background-color: white;
+    padding:10px ;
+    border-radius: 8px;
+    border: 0.1rem solid #2393EA;
+    color: #2393EA;
+    padding-top: 15px;
+}
+.parentInputs label {
+    background-color: #2393EA;
+    color: white;
+    font-size: 0.8rem;
+    padding: 0.1rem;
+    border-radius: 5px;
+    position: relative;
+    left: 0.6rem;
+    top: 0.7rem;
+}
+.parentInputs p {
+
+    text-align: center;
+}
+.parentInputs p a{
+    color: #2393EA;
+    font-size: 0.8rem;
+    text-align: center;
+}
+.inputLogin {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+#LoginSubmit {
+    color: white;
+    background-color: #2393EA;
+    padding: 10px;
+    width: 100%;
+    margin-top: 8px;
+    cursor: pointer;
+    transition: all .2s;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+.parentInputs input:focus {
+    outline: 0.09rem solid #2393EA;
+}
+#LoginSubmit:hover{
+    box-shadow: 0 0 2px #00589c inset;
+}
+#LoginSubmit:active{
+    box-shadow: 0 0 2px #00589c inset;
+    transform: scale(0.9);
+}
+.dateInput {
+    width: 89%;
+    font-size: 0.7rem;
+}
+
+
+.formCree {
+    background-color: aqua;
+    width: 80%;
+    padding: 0.5rem;
+    padding-top: 1.5rem;
+    padding-right: 0.9rem;
+    background-color: white;
+    border: 0.1rem solid #2393EA;
+    border-radius: 10px;
+}
+
+.p-Error {
+    color: red;
+    padding: 0;
+    font-size: 0.7rem;
+}
+
+.flashbagParent {
+    display: grid;
+    place-items: center;
+    height: 10px;
+}
+
+.flashbagParent p{
+    background-color: #2393EA;
+    width: fit-content;
+    padding: 5px 15px;
+    text-transform: capitalize;
+    border-radius: 10px;
+    position: relative;
+    top: 1rem;
+    color: white;
+}
+.flashbag-error p{
+    background-color: red;
+    width: fit-content;
+    padding: 5px 15px;
+    text-transform: capitalize;
+    border-radius: 10px;
+    position: relative;
+    top: 1rem;
+    color: white;
+}
+
+
+.parentNavbar {
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 10px;
+    height: 50px;
+    align-items: center;
+}
+
+.parentLeftNav {
+    gap: 3px;
+    display: flex;
+}
+.parentSearchbar {
+    background-color: white;
+    border: 0.1rem solid #2393EA;
+    border-radius: 10px;
+    height: 2rem;
+}
+.parentSearchbar form input {
+    background:transparent;
+    border: none;
+    outline: none;
+    padding: 0.4rem;
+    margin-bottom: 0.1rem;
+    font-family: 'Poppins', sans-serif;
+    color: #2393EA;
+
+}
+.parentSearchbar form button {
+    background:transparent;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #2393EA;
+    outline: none;
+    padding: 0.5rem;
+}
+
+.paprentLogoBrand img{
+    width: 130px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 7px;
+}
+.parentUl {
+    width: 30rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: absolute;
+    left: 28rem;
+
+}
+.parentUl ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+}
+.parentUl ul li a{
+    font-size: 2rem;
+    color: #2393EA;
+    margin:  2rem;
+    transition: all 0.2s;
+}
+.parentUl ul li{
+    transition: all .2s;
+}
+.parentUl ul li :hover{
+    transform: scale(1.2);
+}
+.parentUl ul li a:active{
+    transform: scale(0.9);
+    text-shadow: 0 0 15px #2393EA;
+}
+.parentUlUser ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+}
+.parentUlUser ul li a{
+    font-size: 2rem;
+    color: #2393EA;
+    margin:  1rem;
+}
+
+.imgProfile {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    margin-top: 4px;
+    border: 0.1rem solid #2393EA;
+    border-radius: 50%;
+}
+.parentSidebar {
+    background:linear-gradient(130deg, #2393EA, #2393EA,  #00589c   ) ;
+    padding: 10px;
+    position: relative;
+    bottom: 5rem;
+    left: 2rem;
+    /* border: 0.1rem solid white; */
+    border-radius: 10px;
+    height: 15rem;
+    width: 12rem;
+}
+.parentSidebar2 {
+    background:linear-gradient(130deg, red, red,  rgb(181, 0, 0)) ;
+    padding: 10px;
+    position: relative;
+    bottom: 5rem;
+    left: 2rem;
+    /* border: 0.1rem solid white; */
+    border-radius: 10px;
+    height: 15rem;
+    width: 12rem;
+}
+
+.profile {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    color: white;
+    position: relative;
+    left: 0.5rem;
+    cursor: pointer;
+
+}
+.imgProfileSide {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    margin-top: 4px;
+    border: 0.1rem solid white;
+    border-radius: 50%;
+}
+.profileUl ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    right: 1.5rem;
+    bottom: 1rem;
+}
+.profileUl ul li a{
+    color: white;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+.profileUl ul li {
+    transition: all 0.2s;
+}
+.profileUl ul li:hover {
+    transform: scale(1.2);
+}
+
+.parentSide {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+    top:6rem;
+}
+.parentPost {
+    width: 28.1rem;
+    position: absolute;
+    left: 23.85rem;
+    top: 6rem;
+    padding: 0.5rem 2rem;
+    border: 0.1rem solid #2393EA;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+    background-color: white;
+    z-index: 2;
+    margin-left: 1rem;
+}
+.parentAddPost {
+    width: 100%;
+    padding: 0.5rem;
+    padding-bottom: 4rem;
+}
+.imgProfilePost {
+    width :40px;
+    height :40px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    left: 2rem;
+    border: 0.1rem solid #2393EA;
+}
+.parentAddPost form input{
+    padding: 2rem;
+    width: 68%;
+    position: absolute;
+    left: 5rem;
+    font-family: 'Poppins', sans-serif;
+    color: #2393EA;
+    border: none;
+    outline: none;
+    /* bottom: 2rem; */
+    border-radius: 5px;
+}
+.parentAddPost ul{
+    list-style-type:none ;
+    display: flex;
+    position: relative;
+    top: 4.5rem;
+    justify-content: space-between;
+    padding: 0px 1rem;
+    padding-top: 10px;
+    border-top: 0.1rem solid #2393EA;
+}
+.parentAddPost ul li{
+    padding: 2px 1rem;
+    transition: all 0.2s;
+}
+.linkLive {
+    text-decoration: none;
+    color: red;
+}
+
+.linkPhotoVideo {
+    text-decoration: none;
+    color: #2393EA;
+}
+.linkActivite {
+    text-decoration: none;
+    color: rgb(35, 230, 0);
+}
+
+.linkLiveParent:hover {
+    background-color: rgba(255, 103, 103, 0.105);
+    border-radius: 6px;
+    transform: scale(1.1);
+}
+.linkLiveParent:active {
+    transform: scale(0.8);
+}
+.linkPhotoVideoParent:hover {
+    background-color: rgba(0, 147, 239, 0.105);
+    border-radius: 6px;
+    transform: scale(1.1);
+}
+.linkPhotoVideoParent:active {
+    transform: scale(0.8);
+}
+.linkActiviteParent:hover {
+    background-color: rgba(29, 215, 0, 0.105);
+    border-radius: 6px;
+    transform: scale(1.1);
+}
+.linkActiviteParent:active {
+    transform: scale(0.8);
+}
+.inputFilePost {
+    display: none;
+}
+.parentImagePost {
+    display: none;
+    width: 70%;
+    margin: auto;
+    display: grid;
+    place-items: center;
+}
+.preview-image {
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    position: relative;
+    top: 5rem;
+    border-radius: 10px;
+    border: 0.02rem transparent;
+    outline: 0.1rem dashed #2393EA;
+}
+.btnCloseImg {
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    color: white;
+    background-color: #2393EA;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 0.1rem solid #ffffff;
+    position: absolute;
+    z-index: 2;
+    left: 21.5rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.btnCloseImg:hover {
+    transform: scale(1.2);
+}
+.btnCloseImg:active {
+    transform: scale(0.8);
+}
+.btnSubmitPost {
+    display: none;
+    color: #2393EA;
+    background-color: white;
+    padding: 0.3rem 0.7rem;
+    position: absolute;
+    top: 4rem;
+    left: 26rem;
+    border: 0.1rem solid #2393EA;
+    box-shadow: 2px 2px #2393EA;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: 0.1s;
+}
+.btnSubmitPost:active {
+    box-shadow: 0px 0px #2393EA;
+    transform: translate(3px, 3px);
+}
+
+.parentPostPublished {
+    /* background-color: #23e600; */
+    position: relative;
+    top: 11.5rem;
+    left: 2.6rem;
+    width: 50.45%;
+    display: flex;
+    margin-left: 1rem;
+    flex-direction: column;
+    /* height: 25rem;
+    overflow: scroll; */
+    /* --sb-track-color: #ffffff;
+    --sb-thumb-color: #2393ea;
+    --sb-size: 1px;
+
+    scrollbar-color: var(--sb-thumb-color)
+                     var(--sb-track-color); */
+
+}
+/* .parentPostPublished::-webkit-scrollbar {
+    width: var(--sb-size);
+  }
+
+  .parentPostPublished::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 7px;
+  }
+
+  .parentPostPublished::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 7px;
+  } */
+
+.post {
+    padding: 1rem;
+    border: 0.1rem solid #2393EA;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+.post .compteImgPost img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 0.1rem solid #2393EA;
+}
+
+.post .infoCompteData {
+    line-height: 0;
+    position: relative;
+    left: 0.6rem;
+    bottom: 0.6rem;
+    color: #2393EA;
+    text-transform: capitalize;
+}
+
+.post .infoCompteDataVerif {
+    line-height: 0;
+    position: relative;
+    left: 0.6rem;
+    bottom: 1rem;
+    color: #2393EA;
+    text-transform: capitalize;
+}
+.post .infoCompteDataVerif p{
+    color: #00589c;
+    font-size: 0.7rem;
+    margin-top: -8px;
+    font-weight: 500;
+}
+
+.post .infoCompteData p{
+    color: #00589c;
+    font-size: 0.7rem;
+    margin-top: -3px;
+    font-weight: 500;
+}
+.post .infoCompte {
+    display: flex;
+}
+.bodyPost {
+    width: 90%;
+    margin: auto;
+    bottom: 2rem;
+    color: #2393EA;
+    border-radius: 4px;
+}
+
+.imagePost img {
+    width: 100%;
+    position: relative;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border: 0.03rem solid #2393EA;
+
+}
+.parentControlles {
+    /* background-color: blueviolet; */
+    position: relative;
+    margin-top: -1rem;
+    border-radius: 10px;
+    border: 0.05rem dashed #2393EA;
+}
+.controlls {
+    height: fit-content;
+    width: 90%;
+    margin: auto;
+    position: relative;
+    right: 1rem;
+    /* background-color: aqua; */
+}
+.controlls ul{
+    display: flex;
+    gap: 1rem;
+    list-style-type:none ;
+    justify-content: space-between;
+}
+.controlls ul li{
+    width: 8rem;
+    display: grid;
+    place-items: center;
+    padding: 0.3rem 0.1rem;
+    transition: all .2s;
+}
+.controlls ul li:hover{
+    transform: scale(1.1);
+}
+.controlls ul li:active{
+    transform: scale(0.8);
+}
+.controlls ul li a{
+    text-decoration: none;
+}
+.like {
+    background:none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #2393EA;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+.comments {
+    color: red;
+}
+.share{
+    color:#23e600;
+}
+.parentLike {
+    background-color: #2394ea13;
+    border-radius: 5px;
+}
+
+.parentComment {
+    background-color: rgba(255, 0, 0, 0.132);
+    border-radius: 5px;
+}
+
+.parentShare {
+    background-color:rgba(35, 230, 0, 0.119) ;
+    border-radius: 5px;
+}
+
+.btnTripelPost {
+    color: #2393EA;
+    position: relative;
+    font-size: 1.3rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    left: 28.4rem;
+    bottom: 3.2rem;
+    width: 2rem;
+    height: 2rem;
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: all .2s;
+}
+
+.btnTripelPost:hover {
+    background-color: #00589c0e;
+    transform: scale(1.1);
+}
+.btnTripelPost:active {
+    background-color: #0039642b;
+    transform: scale(0.8);
+}
+
+
+
+.parentSetteing {
+    background: linear-gradient(-170deg, #2393EA, #2393EA, #206499);
+    position: absolute;
+    right: 4rem;
+    top: 4rem;
+    padding: 1rem;
+    border-radius: 10px;
+    display: grid;
+    place-items:start;
+}
+
+.parentSetteing ul {
+    list-style-type: none;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    gap: 1rem;
+    /* background-color: aqua; */
+    position: relative;
+    right: 2rem;
+}
+.parentSetteing ul li {
+    width: 8rem;
+    text-align: start;
+    border-bottom: 0.1rem solid white;
+    transition: all .2s;
+}
+.parentSetteing ul li:hover {
+    transform: scale(1.1);
+}
+.parentSetteing ul li:active {
+    transform: scale(0.8);
+    background-color: #0a41001a;
+    border-radius: 5px;
+}
+.parentSetteing ul li a{
+    width: 2rem;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.parentProfile {
+    background: linear-gradient(170deg, #23e600, #23e600, #18a000, #179700);
+    width: 100%;
+    height: 95vh;
+    margin-top: 1rem;
+    border-radius: 10px;
+}
+.btnBack {
+    color: white;
+    font-size: 1.3rem;
+    border-radius: 50%;
+    text-decoration: none;
+    position: absolute;
+    margin: 0.5rem;
+}
+.btnBack i{
+    width: 2rem;
+    height: 2rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    transition: all .2s;
+}
+.btnBack i:hover{
+    background-color: #93939335;
+    transform: scale(1.1);
+}
+.btnBack i:active{
+    background-color: #93939398;
+    color: #179700;
+    transform: scale(0.8);
+}
+
+.btnBackSettings {
+    position: absolute;
+    top: 1.2rem;
+    left: 8.4rem ;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+.btnBackSettings i{
+    width: 2rem;
+    height: 2rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    transition: all .2s;
+}
+.btnBackSettings i:hover{
+    background-color: #93939335;
+    transform: scale(1.1);
+}
+.btnBackSettings i:active{
+    background-color: #93939398;
+    color: #179700;
+    transform: scale(0.8);
+}
+.parentScrollPost {
+    background-color: aqua;
+    overflow: scroll;
+    height: 100vh;
+    width: 60%;
+    padding: 0;
+}
+.parentSettings {
+    width: 100%;
+    background-color: white;
+    border: 0.1rem solid #2393EA;
+    border-radius: 12px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+}
+
+.sidebarSettings {
+    background-color: #2393EA;
+    width: 28%;
+    padding: 1rem;
+    border-radius: 10px 0 0 10px;
+}
+
+.parentParametreConf {
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.parentParametreConf form {
+    background-color: #2393EA;
+    width: 95%;
+    height: 0.9rem;
+    padding: 0.5rem 0.1rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 0.1rem solid white;
+    margin: auto;
+    margin-bottom: 1rem;
+    /* position: ; */
+}
+.parentParametreConf form input{
+    font-size: 1.1rem;
+    width: 100%;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    background: none;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+.parentParametreConf form input::placeholder{
+    color: #d3dee7be;
+    font-size: 0.9rem;
+    display: grid;
+    place-items: center;
+}
+.parentParametreConf form button{
+    color: white;
+    font-size: 1.3rem;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+}
+.parentSpanParaConfi {
+    background-color: white;
+    padding: 0.4rem;
+    color: #2393EA;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px rgba(85, 85, 85, 0.247);
+}
+.parentSpanParaConfi img{
+    position: absolute;
+    height:1.5rem ;
+    object-fit: cover;
+    left: 22.4rem;
+}
+
+
+.parentSpanParaConfi p{
+    color: #3578ac;
+    font-size: 0.7rem;
+    position: relative;
+    bottom: 1rem;
+    width: 95%;
+    margin-left: 5px;
+}
+.parentSpanParaConfi ul{
+    list-style-type: none;
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    right: 1.2rem;
+}
+.parentSpanParaConfi ul li button{
+    color: #2393EA;
+    text-decoration: none;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.parentSpanParaConfi ul li{
+    transition: all .2s;
+}
+.parentSpanParaConfi ul li:hover{
+    transform: scale(1.1);
+}
+.parentSpanParaConfi ul li:active{
+    transform: scale(0.8);
+}
+
+
+.parentParaOutils {
+    background-color: white;
+    padding: 0.5rem;
+    color: #2393EA;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px rgba(85, 85, 85, 0.247);
+}
+.parentParaOutils p{
+    color: #3578ac;
+    font-size: 0.7rem;
+    position: relative;
+    bottom: 1rem;
+    width: 95%;
+    margin-left: 5px;
+}
+.parentParaOutils ul{
+    list-style-type: none;
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    right: 1.2rem;
+}
+.parentParaOutils ul li a{
+    color: #2393EA;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+.parentParaOutils ul li{
+    transition: all .2s;
+}
+.parentParaOutils ul li:hover{
+    transform: scale(1.1);
+}
+.parentParaOutils ul li:active{
+    transform: scale(0.8);
+}
+
+
+.parentParaPrefe {
+    background-color: white;
+    padding: 0.5rem;
+    color: #2393EA;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px rgba(85, 85, 85, 0.247);
+}
+.parentParaPrefe p{
+    color: #3578ac;
+    font-size: 0.7rem;
+    position: relative;
+    bottom: 1rem;
+    width: 95%;
+    margin-left: 5px;
+}
+.parentParaPrefe ul{
+    list-style-type: none;
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    right: 1.2rem;
+}
+.parentParaPrefe ul li a{
+    color: #2393EA;
+    text-decoration: none;
+}
+.parentParaPrefe ul li{
+    transition: all .2s;
+}
+.parentParaPrefe ul li:hover{
+    transform: scale(1.1);
+}
+.parentParaPrefe ul li:active{
+    transform: scale(0.8);
+}
+.parentFixedSettings {
+    /* position: fixed; */
+}
+.parentContentSidebar {
+    /* background-color: aqua; */
+    width: 66%;
+    border-radius: 0 10px 10px 0;
+}
+.parentContentSidebar h1 {
+    color: #2393EA;
+}
+
+.parentContentSidebar{
+    /* background-color: yellow; */
+    padding: 1rem;
+}
+
+.parentProfileSettings {
+    /* background-color: deeppink; */
+}
+
+.parentActivite {
+    /* background-color: blueviolet; */
+    padding-top: 2rem;
+}
+
+.navabrActivite {
+    display: flex;
+    gap: 1rem;
+}
+.navabrActivite .divTitle{
+    color: #2393ea;
+    position: relative;
+    left: 2rem;
+    bottom: 0.5rem;
+    margin-right: 1.3rem;
+}
+.line {
+    position: absolute;
+    bottom: 3rem;
+    left: 5.3rem;
+    top: 0.5rem;
+}
+.navabrActivite .divTitle h6{
+    color: #606060;
+    position: relative;
+    left: 0.2rem;
+    bottom: 1.7rem;
+}
+.btnPostSettings {
+    background: linear-gradient(150deg, #2393EA, #2393EA, #00589c);
+    height: 2rem;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    top: 1rem;
+    left: 2.2em;
+}
+.btnCommuntSettings {
+    background: linear-gradient(130deg, red, rgb(255, 21, 21), rgb(190, 0, 0));
+    height: 2rem;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    top: 1rem;
+    left: 2.2em;
+}
+.btnLikesSettings {
+    background: linear-gradient(60deg, #23e600, #23e600,#18a000);
+    height: 2rem;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    top: 1rem;
+    left: 2.2em;
+}
+
+
+.parentImagesProfile {
+    background-color: white;
+    padding-bottom: 4rem;
+}
+.parentImagesProfile {
+    position: relative;
+}
+
+.coverSettings {
+    background: linear-gradient(170deg, #2393EA, #2393EA, #206499, #00589c);
+    width: 100%;
+    object-fit: cover;
+    height: 11rem;
+    border-radius: 10px;
+}
+.imageProfileSettings {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 0.2rem solid white;
+    position: absolute;
+    border-radius: 50%;
+    top: 7.5rem;
+    right: 31rem;
+    cursor: pointer;
+}
+
+.btnCamera {
+    cursor: pointer;
+    background-color:#2393ea;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: grid;
+    place-items: center;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 13.2rem;
+    right: 31.5rem;
+    border: 0.15rem solid white;
+}
+
+.parentImagesProfile h3 {
+    color: #2393EA;
+    /* background-color: #179700; */
+    width: 17rem;
+    position: absolute  ;
+    right: 13rem;
+    top: 10.5rem;
+}
+.parentImagesProfile h6 {
+    /* background-color: #179700; */
+    width: 17rem;
+    color: #606060;
+    position: absolute  ;
+    right: 12.5rem;
+    top: 11.5rem;
+}
+
+.btnModifieSettings {
+    position: absolute;
+    right: 3rem;
+    top: 12rem;
+    padding: 0.2rem 0.3rem;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(140deg, #2393EA, #2393EA, #00589c);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.btnModifieSettings:hover {
+    transform: scale(1.1);
+}
+.btnModifieSettings:active {
+    transform: scale(0.8);
+}
+
+
+.btnSeemore {
+    position: absolute;
+    right: 1rem;
+    top: 12rem;
+    padding: 0.2rem 0.3rem;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(140deg, #2393EA, #2393EA, #00589c);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.btnSeemore:hover {
+    transform: scale(1.1);
+}
+.btnSeemore:active {
+    transform: scale(0.8);
+}
+
+.parentPostsSettings {
+    /* background-color: blue; */
+    width:65%;
+    margin: auto;
+    height: 27rem;
+    overflow: scroll;
+    padding-right: 3px;
+    --sb-track-color: #ffffff;
+    --sb-thumb-color: #2393ea;
+    --sb-size: 3px;
+
+    scrollbar-color: var(--sb-thumb-color)
+                     var(--sb-track-color);
+
+}
+
+
+.visibleLike {
+    background: linear-gradient(150deg, #2393EA, #2393EA, #00589c);
+    height: 2rem;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 6px;
+    border-top: 2px solid #00589c;
+    outline: 1px solid white;
+    cursor: pointer;
+    position: relative;
+    top: 1rem;
+    left: 2.2em;
+    transition: all .2s;
+    transform: scale(1.2);
+}
+
+.parentPostsSettings::-webkit-scrollbar {
+    width: var(--sb-size);
+  }
+
+  .parentPostsSettings::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 4px;
+  }
+
+  .parentPostsSettings::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 4px;
+  }
+
+
+.parentPostsSettings .controlls ul{
+    gap: 8px;
+}
+.parentPostsSettings .btnTripelPost{
+    position: relative;
+    right: 5rem;
+    margin-left: -8rem;
+}
+
+.parentModelEdit {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    margin-left: -8rem;
+    top: 0;
+    background-color: rgba(190, 190, 190, 0.685);
+    z-index: 2;
+    display: grid;
+    place-items: center;
+    backdrop-filter: blur(3px);
+}
+.parentFormModel {
+    width: 50rem;
+    height: 30rem;
+    overflow: scroll;
+    border-radius: 10px 4px 4px 10px;
+    background-color: white;
+    box-shadow: 0 0 16px 3px rgba(155, 155, 155, 0.345) ;
+    position: absolute;
+    z-index: 3;
+    --sb-track-color: #ffffff;
+    --sb-thumb-color: #2393ea;
+    --sb-size: 2px;
+
+    scrollbar-color: var(--sb-thumb-color)
+                     var(--sb-track-color);
+}
+.parentFormModel::-webkit-scrollbar {
+    width: var(--sb-size);
+  }
+
+  .parentFormModel::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 4px;
+  }
+
+  .parentFormModel::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 4px;
+  }
+
+.parentFormModel h2 {
+    color: #2393EA;
+    /* position: relative;
+    left: 6.5rem; */
+    position: relative;
+    left: 7rem;
+    width: 70%;
+    /* background-color: #23e600; */
+}
+
+.btnCloseModel {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    color: #2393EA;
+    font-size: 1.4rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+    transition: all .2s;
+}
+.btnCloseModel:hover {
+    transform: scale(1.3);
+}
+.btnCloseModel:active {
+    transform: scale(0.7);
+}
+
+.divFormEdit {
+    /* background-color: blueviolet; */
+    border: 0.05rem solid #2393EA;
+    border-radius: 7px;
+    width: 70%;
+    padding: 1rem;
+    margin: auto;
+}
+
+.coverImgEdit {
+    width: 35rem;
+    height: 5rem;
+    background: linear-gradient(130deg, #2393EA, #2393ea, #004070);
+    border-radius: 10px;
+    margin: auto;
+    position: relative;
+    object-fit: cover;
+}
+.penEditCover {
+    width: 2rem;
+    height: 2rem;
+    font-size: 1rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    color: white;
+    position: absolute;
+    right: 8rem;
+    top: 8.4rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.penEditCover:hover {
+    background-color: rgba(255, 255, 255, 0.171);
+    transform: scale(1.1);
+}
+.penEditCover:active {
+    background-color: rgba(255, 255, 255, 0.619);
+    color: #00589c;
+    transform: scale(0.8);
+}
+.ImgEdit {
+    position: absolute;
+    left: 22rem;
+    top:7rem;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border: 0.15rem solid white;
+}
+
+.penEdit {
+    position: absolute;
+    /* background-color: #1797005d; */
+    width: 90px;
+    height: 90px;
+    left: 22.1rem;
+    top: 7.1rem;
+    display: grid;
+    border-radius: 50%;
+    place-items: center;
+    font-size: 2.7rem;
+    color: white;
+    opacity: 0;
+    cursor: pointer;
+    transition: all .2s;
+}
+.penEdit:hover {
+    opacity: 1;
+    backdrop-filter: blur(5px);
+}
+
+
+.formEdit table{
+    /* background-color: aqua; */
+    width: 80%;
+    margin: auto;
+}
+.formEdit table tr td input{
+    width: 90%;
+    margin: auto;
+    background-color: white;
+    border-radius: 7px;
+    border: 0.1rem solid #2393EA;
+    padding: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+    color: #2393EA;
+    font-weight: 500;
+    /* background-color: coral; */
+}
+.formEdit table tr td input:focus {
+    outline: 0.1rem solid #2393EA;
+}
+.formEdit table tr td label {
+    color: white;
+    background-color: #2393ea;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    padding: 0px 4px;
+    position: relative;
+    top: 0.6rem;
+    left: 0.4rem;
+}
+.formEdit table tr td textarea{
+    width: 95%;
+    margin: auto;
+    background-color: white;
+    border-radius: 5px;
+    border: 0.1rem solid #2393EA;
+    padding: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+    color: #2393EA;
+    font-weight: 500;
+    /* background-color: coral; */
+}
+.formEdit table tr td textarea:focus {
+    outline: 0.1rem solid #2393EA;
+}
+.ulOfImgProfile {
+    background-color: rgb(237, 0, 0);
+    position: absolute;
+    padding: 0.5rem;
+    border-radius: 10px;
+    z-index: 4;
+    padding-right: 1.5rem;
+    left: 7.8rem;
+    top:13rem;
+    border: 2px solid white;
+}
+.ulOfImgProfile ul {
+    color: white;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.ulOfImgProfile ul li button{
+    color: white;
+    text-decoration: none;
+    background:none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.ulOfImgProfile ul li{
+    transition: all .2s ;
+    border-bottom: 2px solid white;
+}
+.ulOfImgProfile ul li:hover{
+    transform: scale(1.2);
+}
+.ulOfImgProfile ul li:active{
+    transform: scale(0.8);
+}
+.parentViewImage {
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100vh;
+    z-index: 5;
+    background-color: #00243fda;
+    display: grid;
+    place-items: center;
+    backdrop-filter: blur(5px);
+
+}
+.parentViewImage .parentImageView {
+    /* background-color: #179700; */
+    width: 70%;
+    display: grid;
+    place-items: center;
+}
+.parentViewImage .parentImageView img{
+    width: 40%;
+    border-radius: 10px;
+}
+.iVerifi {
+    font-size: 1.2rem;
+    position: relative;
+    top: 0.1rem;
+}
+.iVerifipost {
+    font-size: 0.8rem;
+    position: relative;
+    top:  0rem;
+    /* background-color: #23e600; */
+}
+.btnSideBarToggle {
+    background-color: #003f70a4;
+}
+
+.parentContentSidebarAutomaticlly {
+    width: 66%;
+    border-radius: 0 10px 10px 0;
+    padding: 1rem;
+    color: #2393EA;
+}
+.parentUlAutomatically {
+    display: flex;
+    flex-direction: column;
+
+}
+.parentUlAutomatically .ul1{
+    display: flex;
+    flex-direction: row;
+    list-style-type:none ;
+    justify-content: space-between;
+    padding-left: 0.2rem;
+    gap: 1rem;
+
+}
+.parentUlAutomatically .ul1 li{
+    width: 33.33%;
+    display: grid;
+    place-items: center;
+    padding: 0.3rem;
+    border: 0.1rem solid #2393EA;
+    border-radius: 8px;
+}
+.parentUlAutomatically .ul1 li a{
+    text-decoration: none;
+}
+.parentUlAutomatically .ul1 li p{
+    color: #545454;
+    font-size: 0.6rem;
+    text-decoration: none;
+}
+.parentUlAutomatically .ul1 li lord-icon{
+    margin: auto;
+    position: relative;
+    top:1rem;
+    left: 2.8rem;
+
+}
+.parentUlAutomatically .ul1 li h4{
+    text-align: center;
+    color:#2393ea;
+}
+
+.parentUlAutomatically .ul1 li:hover{
+    background-color: #0d5c980f;
+}
+
+.parentUlAutomatically .ul2{
+    display: flex;
+    flex-direction: row;
+    list-style-type:none ;
+    justify-content: space-between;
+    padding-left: 0.2rem;
+    gap: 1rem;
+
+}
+.parentUlAutomatically .ul2 li{
+    width: 50%;
+    display: grid;
+    place-items: center;
+    padding: 0.3rem;
+    border: 0.1rem solid #2393EA;
+    border-radius: 8px;
+}
+.parentUlAutomatically .ul2 li a{
+    text-decoration: none;
+}
+.parentUlAutomatically .ul2 li p{
+    color: #545454;
+    font-size: 0.6rem;
+    text-decoration: none;
+}
+.parentUlAutomatically .ul2 li lord-icon{
+    margin: auto;
+    position: relative;
+    top:1rem;
+    left: 6.8rem;
+
+}
+.parentUlAutomatically .ul2 li h4{
+    text-align: start;
+    color:#2393ea;
+}
+
+.parentUlAutomatically .ul2 li:hover{
+    background-color: #0d5c980f;
+}
+
+.parentMotdePass {
+    width: 66%;
+    border-radius: 0 10px 10px 0;
+    padding: 1rem;
+    color: #2393EA;
+}
+.parentMotdePass h4 {
+    padding-left: 1rem;
+}
+.parentMotdePass p {
+    padding-left: 2rem;
+    font-size: 0.7rem;
+    color: #545454;
+}
+
+.parentMotdePass form {
+    padding: 1rem;
+}
+.parentMotdePass form table{
+}
+.parentMotdePass form input{
+    width: 15rem;
+    padding: 0.5rem;
+    color: #2393ea;
+    border: 0.1rem solid #2393EA;
+    border-radius: 6px;
+    margin-right: 1rem;
+    padding-top: 0.7rem;
+}
+.parentMotdePass form p{
+    color: red;
+    font-size: 0.8rem;
+    position: relative;
+    bottom: 0.7rem  ;
+    right: 1rem;
+}
+.parentMotdePass form label{
+    color: white;
+    background-color: #2393ea;
+    font-size: 0.8rem;
+    padding: 0.1rem;
+    border-radius: 5px;
+    position: relative;
+    top: 0.7rem;
+    left: 0.5rem;
+}
+.parentMotdePass form a{
+    color: #2393ea;
+    font-size: 0.8rem;
+    padding-left: 0.8rem;
+    position: relative;
+    top: 1rem;
+}
+.parentMotdePass form button{
+    color: white;
+    background-color: #2393ea;
+    padding: 0.3rem;
+    font-size: 1rem;
+    border: 0.03rem solid white;
+    outline: none;
+    border-radius: 5px;
+    position: relative;
+    left: 12.5rem;
+    top: 1rem;
+    cursor: pointer;
+}
+#inputPassActuel {
+    width: 32.6rem;
+}
+.parentMotdePass form input:focus{
+    outline: 0.1rem solid #2393EA;
+}
+
+.flashbagParentPassword {
+    display: grid;
+    place-items: center;
+    height: 10px;
+    position: absolute;
+    top: 0rem;
+    right: 3rem;
+}
+
+.flashbagParentPassword p{
+    background-color: #2393EA;
+    width: fit-content;
+    padding: 5px 15px;
+    text-transform: capitalize;
+    border-radius: 10px;
+    position: relative;
+    top: 1rem;
+    color: white;
+    box-shadow: 4px  0px 100px 10px #2393EA;
+}
+.ulSeemore {
+    background: linear-gradient(120deg, #2393EA, #2393EA, #0164af);
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    padding: 0.8rem;
+    border-radius: 7px;
+    width: fit-content;
+    position: absolute;
+    right: -5rem;
+    top: 13rem;
+}
+.ulSeemore li a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.7rem;
+    font-family: 'Poppins', sans-serif;
+
+}
+.ulSeemore li  {
+    padding: 0.2rem;
+    border-bottom: 0.1rem solid white;
+    transition: all .2s;
+}
+.ulSeemore li:hover {
+    transform: scale(1.1);
+}
+.ulSeemore li:active {
+    background-color: #003f7045;
+    border-radius: 8px;
+    transform: scale(0.8);
+}
+.ulAuthPost {
+    background-color: #2393EA;
+    padding: 1rem;
+    list-style-type: none;
+    border-radius: 7px;
+}
+.ulAuthPost li a{
+    color: white;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+.ulAuthPost li a:hover{
+    transform: scale(1.1);
+}
+.ulAuthPost li a:active{
+    transform: scale(0.8);
+}
